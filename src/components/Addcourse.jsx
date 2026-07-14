@@ -30,7 +30,7 @@ const Addcourse = () => {
 
     const readValue = () => {
         console.log(input);
-        axios.post("", input)
+        axios.post("http://localhost:3000/add-course", input)
             .then((response) => {
                 console.log(response.data);
                 alert("Course added successfully");
